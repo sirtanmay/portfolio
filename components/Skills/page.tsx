@@ -4,44 +4,72 @@ const Skills = () => {
 	return (
 		<section className="space-y-4">
 			<h2 className="text-2xl font-semibold tracking-tight">Skills</h2>
-			<h2 className="text-lg font-semibold tracking-tight">Experienced</h2>
+			<h2 className="text-lg font-semibold tracking-tight">
+				Languages & Databases
+			</h2>
+			<div className="flex flex-wrap gap-2">
+				{["Javascript", "Typescript", "HTML5", "MongoDB", "Prisma"].map(
+					(skill) => (
+						<div
+							key={skill}
+							className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm"
+						>
+							{skill}
+						</div>
+					)
+				)}
+			</div>
+			<h2 className="text-lg font-semibold tracking-tight">
+				Frameworks / Libraries
+			</h2>
 			<div className="flex flex-wrap gap-2">
 				{[
-					"React",
+					"ReactJS",
 					"React Native",
-					"Next.js",
-					"Next Auth",
-					"TypeScript",
-					"Sanity",
+					"NextJS",
+					"NodeJS",
+					"Express",
+					"Bootstrap",
 					"Tailwind CSS",
-					"JavaScript",
-					"HTML/CSS",
-					"Git",
-					"Responsive Design",
-					"UI/UX",
-				].map((skill) => (
+					"ShadCN",
+					"Material UI",
+					"GSAP",
+					"CSS3",
+					"REST API",
+					"Vite",
+				].map((framework) => (
 					<div
-						key={skill}
+						key={framework}
 						className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm"
 					>
-						{skill}
+						{framework}
 					</div>
 				))}
 			</div>
-			<h2 className="text-lg font-semibold tracking-tight">Familiar</h2>
+			<h2 className="text-lg font-semibold tracking-tight">State Management</h2>
 			<div className="flex flex-wrap gap-2">
-				{[
-					"Angular",
-					"VueJS",
-					"GraphQL",
-					"MongoDB",
-					"Microfrontend",
-				].map((familiarSkill) => (
+				{["Redux", "Zustand", "React Context API"].map((state) => (
 					<div
-						key={familiarSkill}
+						key={state}
 						className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm"
 					>
-						{familiarSkill}
+						{state}
+					</div>
+				))}
+			</div>
+			<h2 className="text-lg font-semibold tracking-tight">Software</h2>
+			<div className="flex flex-wrap gap-2">
+				{[
+					"Android Studio",
+					"XCode",
+					"VS Code",
+					"Interface Builder (Figma, XD)",
+				].map((software) => (
+					<div
+						key={software}
+						className="px-4 py-2 bg-secondary text-secondary-foreground rounded-full text-sm"
+					>
+						{software}
 					</div>
 				))}
 			</div>

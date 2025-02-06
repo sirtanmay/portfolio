@@ -6,12 +6,12 @@ const About = () => {
 			<h2 className="text-2xl font-semibold tracking-tight">About</h2>
 			<div className="text-muted-foreground leading-relaxed">
 				<p>
-					I’m a dedicated Frontend Developer with 2 years and 10 months of
-					experience creating engaging, responsive, and high-performance web and
-					mobile applications. My expertise lies in building user-centric
-					interfaces using React JS, React Native, Next.js, and Tailwind CSS.
-					I’m passionate about crafting seamless user experiences that
-					prioritize both functionality and aesthetic appeal.
+					I’m a dedicated Fullstack UI Developer with 3 years of experience
+					creating engaging, responsive, and high-performance web and mobile
+					applications. My expertise lies in building user-centric interfaces
+					using React JS, React Native, Next.js, and Tailwind CSS. I’m
+					passionate about crafting seamless user experiences that prioritize
+					both functionality and aesthetic appeal.
 					<br />
 					Key Strengths:
 				</p>
@@ -21,8 +21,8 @@ const About = () => {
 						applications.
 					</li>
 					<li>
-						- Skilled in Next.js to optimize performance, SSR and enhance SEO
-						for web apps.
+						- Skilled in NextJS to optimize performance, SSR and enhance SEO for
+						web apps.
 					</li>
 					<li>
 						- Experienced with React Native to develop cross-platform mobile

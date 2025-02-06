@@ -16,13 +16,12 @@ export default function Home() {
 	return (
 		<main className="min-h-screen bg-background p-8 md:p-12 lg:p-16">
 			<div className="max-w-4xl mx-auto space-y-12">
-				{/* Hero Section */}
 				<section className="space-y-4">
 					<h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
 						Tanmay Varshney
 					</h1>
 					<p className="text-xl md:text-2xl text-muted-foreground">
-						Frontend Developer crafting beautiful web experiences
+						Fullstack UI Developer crafting beautiful web experiences
 					</p>
 					<div className="flex gap-4 pt-4">
 						<Button variant="outline" size="icon">
@@ -52,10 +51,8 @@ export default function Home() {
 					</div>
 				</section>
 
-				{/* About Section */}
 				<About />
 
-				{/* Projects Section */}
 				<section className="space-y-6">
 					<h2 className="text-2xl font-semibold tracking-tight">
 						Featured Projects
@@ -82,6 +79,41 @@ export default function Home() {
 
 						<Card>
 							<CardHeader>
+								<CardTitle>Quiz</CardTitle>
+								<CardDescription>NextJS · Redux</CardDescription>
+							</CardHeader>
+							<CardContent>
+								<p className="text-sm text-muted-foreground mb-4">
+									Well optimised quiz app with 3 levels and real-time progress.
+								</p>
+								<Button
+									className="mr-2"
+									variant="outline"
+									size="sm"
+									onClick={() =>
+										window.open(
+											"https://quiz-application-two-orcin.vercel.app/"
+										)
+									}
+								>
+									<ExternalLink className="h-4 w-4 mr-2" />
+									View Project
+								</Button>
+								<Button
+									variant="outline"
+									size="sm"
+									onClick={() =>
+										window.open("https://github.com/sirtanmay/quiz")
+									}
+								>
+									<ExternalLink className="h-4 w-4 mr-2" />
+									GitHub
+								</Button>
+							</CardContent>
+						</Card>
+
+						<Card>
+							<CardHeader>
 								<CardTitle>Dashboard UI</CardTitle>
 								<CardDescription>React · Redux · Chart.js</CardDescription>
 							</CardHeader>
@@ -91,6 +123,7 @@ export default function Home() {
 									responsive design.
 								</p>
 								<Button
+									className="mr-2"
 									variant="outline"
 									size="sm"
 									onClick={() =>
@@ -99,6 +132,18 @@ export default function Home() {
 								>
 									<ExternalLink className="h-4 w-4 mr-2" />
 									View Project
+								</Button>
+								<Button
+									variant="outline"
+									size="sm"
+									onClick={() =>
+										window.open(
+											"https://github.com/sirtanmay/byewind-dashboard"
+										)
+									}
+								>
+									<ExternalLink className="h-4 w-4 mr-2" />
+									GitHub
 								</Button>
 							</CardContent>
 						</Card>
